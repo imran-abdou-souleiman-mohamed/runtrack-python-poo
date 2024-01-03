@@ -1,0 +1,25 @@
+class Animal:
+    def __init__(self):
+        self.age = 0
+        self.prenom = ""
+
+    def vieillir(self):
+        self.age += 1
+
+    def nommer(self, nouveau_nom):
+        self.prenom = nouveau_nom
+
+    def afficher_infos(self):
+        print(f"L'âge de l'animal {self.prenom} est {self.age} ans")
+
+mon_animal = Animal()
+
+mon_animal.afficher_infos()
+
+mon_animal.vieillir()
+
+mon_animal.afficher_infos()
+
+mon_animal.nommer("Luna")
+
+mon_animal.afficher_infos()
