@@ -1,33 +1,21 @@
-class Point:
-    def __init__(self, x=0, y=0):
-        self.x = x
-        self.y = y
-
+class Point():
+    def __init__(self):
+        self.x = 100
+        self.y = 100
     def afficherLesPoints(self):
-        print(f"Coordonnées du point : ({self.x}, {self.y})")
-
+        print(f"x = {self.x} et y = {self.y}")
     def afficherX(self):
-        print(f"La coordonnée horizontale (x) est : {self.x}")
-
+        print(f"x = {self.x}")
     def afficherY(self):
-        print(f"La coordonnée verticale (y) est : {self.y}")
-
-    def changerX(self, nouvelle_valeur_x):
-        self.x = nouvelle_valeur_x
-
-    def changerY(self, nouvelle_valeur_y):
-        self.y = nouvelle_valeur_y
-
-point1 = Point(3, 4)
-
-point1.afficherLesPoints()
-
-point1.afficherX()
-
-point1.afficherY()
-
-point1.changerX(6)
-
-point1.changerY(8)
-
-point1.afficherLesPoints()
+        print(f"y = {self.y}")  
+    def changerX(self, new_x):
+        self.x = new_x
+    def changerY(self, new_y):
+        self.y = new_y
+n = Point()
+n.afficherLesPoints()
+n.afficherX()
+n.afficherY()
+n.changerX(100)
+n.changerY(300)
+n.afficherLesPoints()
