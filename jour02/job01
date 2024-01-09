@@ -1,30 +1,15 @@
-class Rectangle:
+class Rectancle():
     def __init__(self, longueur, largeur):
-        self.__longueur = longueur  # Attribut privé
-        self.__largeur = largeur    # Attribut privé
-
-    # Assesseurs (getters)
-    def get_longueur(self):
-        return self.__longueur
-
-    def get_largeur(self):
-        return self.__largeur
-
-    # Mutateurs (setters)
-    def set_longueur(self, longueur):
         self.__longueur = longueur
-
-    def set_largeur(self, largeur):
         self.__largeur = largeur
-
-    def afficher_dimensions(self):
-        print(f"Longueur : {self.__longueur}, Largeur : {self.__largeur}")
-
-mon_rectangle = Rectangle(longueur=10, largeur=5)
-
-mon_rectangle.afficher_dimensions()
-
-mon_rectangle.set_longueur(15)
-mon_rectangle.set_largeur(8)
-
-mon_rectangle.afficher_dimensions()
+    def change_largeur(self,new_largeur):
+        self.__largeur = new_largeur
+    def change_longueur(self,new_longueur):
+        self.__longueur = new_longueur
+    def afficherInfos(self):
+        return(self.__longueur,self.__largeur)
+n = Rectancle(10,5)
+print(n.afficherInfos())
+n.change_longueur(30)
+n.change_largeur(20)
+print(n.afficherInfos())
