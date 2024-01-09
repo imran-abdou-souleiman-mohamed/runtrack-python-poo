@@ -10,6 +10,6 @@ class Rectancle():
         return(self.__longueur,self.__largeur)
 n = Rectancle(10,5)
 print(n.afficherInfos())
-n.change_longueur(30)
-n.change_largeur(20)
+n.change_longueur(15)
+n.change_largeur(15)
 print(n.afficherInfos())

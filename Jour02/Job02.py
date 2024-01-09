@@ -22,11 +22,11 @@ class Livre():
     def afficher_pages(self):
         print(self.__pages)
         return self.__pages
-n = Livre("Harry potter", "Oda", 190)
+n = Livre("Harry", "Oda", 190)
 n.afficher_titre()
 n.afficher_auteur()
 n.afficher_pages()
 n.change_page(-20)
-n.change_page("New")
+n.change_page("new")
 n.change_page(20)
-n.afficher_pages() 
+n.afficher_pages()    

@@ -4,7 +4,7 @@ class Voiture():
         self.__année = année
         self.__modéle = modéle
         self.__kilométrage = kilométrage
-        self.__reservoir = 60
+        self.__reservoir = 50
         self.__en_marche = False
     def get_marque(self):
         return self.__marque
@@ -25,15 +25,17 @@ class Voiture():
     def set_kilometrage(self, kilométrage):
         self.__kilométrage = kilométrage
     def demarrer(self):
-        if self.__reservoir > 6:
+        if self.__reservoir > 5:
             self.__en_marche = True
     def arreter(self):
         self.__en_marche = False
     def __verifier_plein(self):
         return self.__reservoir
-n = Voiture("Bmw", 2021,"série 3",40000)
+n = Voiture("Bmw", 2021,"série 8",50)
 
 n.demarrer()
 print(n.get_en_marche())
 n.arreter()
 print(n.get_en_marche())
+
+

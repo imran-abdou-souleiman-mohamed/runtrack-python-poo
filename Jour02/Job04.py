@@ -30,3 +30,10 @@ n = Student("John", "Doe", 145)
 n.add_crédits(35)
 n.add_crédits(35)
 n.studentInfo()
+
+
+
+        
+
+
+

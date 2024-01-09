@@ -35,7 +35,7 @@ class Commande():
 n = Commande()
 print(f"Numéro de commande : {n.get_num_commande()}")
 n.ajouter_plat_et_prix("kbab",13)
-n.ajouter_plat_et_prix("Burger",12)
+n.ajouter_plat_et_prix("burger",12)
 print(f"Liste commande {n.get_liste_plat_commandé()}")
 n.commandé()
 print(f"Prix : {n.get_price()}")
